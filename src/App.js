@@ -236,7 +236,7 @@ function LicenseLookup() {
                   className="info-image"
                   onClick={() => openModal(info.carImage)}
                 />
-                <div className="image-label">Car Image</div>
+                <div className="image-label">Vehicle Image</div>
               </div>
             )}
           </div>

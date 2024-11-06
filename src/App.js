@@ -160,17 +160,6 @@ function LicenseLookup() {
                   />
                 </div>
                 <div className="input-group">
-                  <label>Address:</label>
-                  <input
-                    type="text"
-                    name="address"
-                    value={editedInfo.address}
-                    onChange={handleInputChange}
-                    placeholder="Address"
-                    className="edit-input"
-                  />
-                </div>
-                <div className="input-group">
                   <label>Contact Number:</label>
                   <input
                     type="text"
@@ -231,60 +220,23 @@ function LicenseLookup() {
             ) : (
               <>
                 <p><strong>Full Name:</strong> {info.fullName}</p>
-                <p><strong>Address:</strong> {info.address}</p>
-                <p><strong>Contact Number:</strong> {info.contactNumber}</p>
                 <p><strong>Sticker Number:</strong> {info.stickerNumber}</p>
-                <p><strong>Expiry Date:</strong> {info.expiryDate}</p>
-                <p><strong>Registered Owner:</strong> {info.registeredOwner}</p>
                 <p><strong>Plate Number:</strong> {info.plateNumber}</p>
               </>
             )}
           </div>
 
           <div className="right-column">
-            <h2>Images:</h2>
-            {info.driverLicenseImage && (
-              <div className="image-wrapper">
-                <img
-                  src={info.driverLicenseImage}
-                  alt="Driver's License"
-                  className="info-image"
-                  onClick={() => openModal(info.driverLicenseImage)}
-                />
-                <div className="image-label">Driver's License</div>
-              </div>
-            )}
+            <h2>Image:</h2>
             {info.carImage && (
               <div className="image-wrapper">
                 <img
-                  src={info.carImage}
+                  src={info.carImage} 
                   alt="Car"
                   className="info-image"
                   onClick={() => openModal(info.carImage)}
                 />
                 <div className="image-label">Car Image</div>
-              </div>
-            )}
-            {info.ltoRegistrationImage && (
-              <div className="image-wrapper">
-                <img
-                  src={info.ltoRegistrationImage}
-                  alt="LTO Registration"
-                  className="info-image"
-                  onClick={() => openModal(info.ltoRegistrationImage)}
-                />
-                <div className="image-label">LTO Registration</div>
-              </div>
-            )}
-            {info.ltoReceiptImage && (
-              <div className="image-wrapper">
-                <img
-                  src={info.ltoReceiptImage}
-                  alt="LTO Receipt"
-                  className="info-image"
-                  onClick={() => openModal(info.ltoReceiptImage)}
-                />
-                <div className="image-label">LTO Receipt</div>
               </div>
             )}
           </div>

@@ -1,6 +1,6 @@
 /* Body styling for overall background and font */
 body {
-  background-image: url('./background.jpg'); /* Ensure the path is correct */
+  background-image: url('./background.png'); /* Ensure the path is correct */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -59,12 +59,12 @@ body {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: rgba(12, 6, 76, 0.85); /* Dark blue with transparency */
+  background-color: rgba(231, 231, 231, 0.85); /* Dark blue with transparency */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -146,7 +146,7 @@ body {
 /* Information display styling */
 .info-display {
   text-align: left;
-  color: #f0f0f0;
+  color: #000000;
 }
 
 /* Right column image styling */
@@ -170,7 +170,7 @@ body {
 
 .image-label {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
 }
 .warning-modal {
   position: fixed;
